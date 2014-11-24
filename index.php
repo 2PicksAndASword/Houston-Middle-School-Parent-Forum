@@ -45,7 +45,7 @@ else
 </div>
 <?php
 }
-if(isset($_SESSION['username']) and $_SESSION['username']=='Aidan Lovelace' or isset($_SESSION['username']) and $_SESSION['username']=='jam0hamm1'  or isset($_SESSION['username']) and $_SESSION['username']=='mrlewis')
+if(isset($_SESSION['username']) and $_SESSION['username']=='Aidan Lovelace')
 {
 ?>
 	<a href="new_category.php" class="button">New Category</a>
@@ -58,7 +58,7 @@ if(isset($_SESSION['username']) and $_SESSION['username']=='Aidan Lovelace' or i
     	<th class="forum_ntop">Topics</th>
     	<th class="forum_nrep">Replies</th>
 <?php
-if(isset($_SESSION['username']) and $_SESSION['username']=='Aidan Lovelace' or isset($_SESSION['username']) and $_SESSION['username']=='jam0hamm1'  or isset($_SESSION['username']) and $_SESSION['username']=='mrlewis')
+if(isset($_SESSION['username']) and $_SESSION['username']=='Aidan Lovelace')
 {
 ?>
     	<th class="forum_act">Action</th>
@@ -78,7 +78,7 @@ while($dnn1 = mysql_fetch_array($dn1))
     	<td><?php echo $dnn1['topics']; ?></td>
     	<td><?php echo $dnn1['replies']; ?></td>
 <?php
-if(isset($_SESSION['username']) and $_SESSION['username']=='Aidan Lovelace' or isset($_SESSION['username']) and $_SESSION['username']=='jam0hamm1'  or isset($_SESSION['username']) and $_SESSION['username']=='mrlewis')
+if(isset($_SESSION['username']) and $_SESSION['username']=='Aidan Lovelace')
 {
 ?>
     	<td><a href="delete_category.php?id=<?php echo $dnn1['id']; ?>"><img width="25" src="<?php echo $design; ?>/images/delete.png" alt="Delete" /></a>
@@ -94,7 +94,7 @@ if(isset($_SESSION['username']) and $_SESSION['username']=='Aidan Lovelace' or i
 ?>
 </table>
 <?php
-if(isset($_SESSION['username']) and $_SESSION['username']=='Aidan Lovelace' or isset($_SESSION['username']) and $_SESSION['username']=='jam0hamm1'  or isset($_SESSION['username']) and $_SESSION['username']=='mrlewis')
+if(isset($_SESSION['username']) and $_SESSION['username']=='Aidan Lovelace')
 {
 ?>
 	<a href="new_category.php" class="button">New Category</a>
