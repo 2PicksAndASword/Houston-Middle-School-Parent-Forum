@@ -5,7 +5,7 @@ Please edit the following variables so the forum can
 work correctly.
 ******************************************************/
 
-//We log to the DataBase
+//We log to the Database
 mysql_connect('host', 'name', 'pass');
 mysql_select_db('database');
 
